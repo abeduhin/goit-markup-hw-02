@@ -31,8 +31,8 @@ body {
 }
 
 .logo:hover, .logo:focus,
-.studio:hover, .studio:focus, 
-.portfolio:hover, .portfolio:focus,
+.studio-portfolio:hover, .studio-portfolio:focus, 
+.portfolio-index:hover, .portfolio-index:focus,
 .contakts:hover, .contakts:focus,
 .mail:hover, .mail:focus, 
 .tel:hover, .tel:focus,
@@ -46,22 +46,25 @@ body {
     
 .nav-list {
     font-weight: 500;
-    font-size: 14px;
-    
-       
-           
-}   
+    font-size: 14px; 
+    list-style-type: none;          
+}    
 
-.nav-list li { 
-    display: inline-block;
-        
-}
-.studio, .portfolio, .contakts, .mail, .tel {
+.studio-index, .studio-portfolio, .portfolio-index, .portfolio-portfolio, .contakts {
     text-decoration: none; 
-    color:rgba(33, 33, 33, 1) ;
-    
-       
+    color:rgba(33, 33, 33, 1) ;    
+      
 }
+.studio-index {
+    color: var(--brand-color);
+}
+.portfolio-portfolio {
+    color: var(--brand-color);
+}
+.mail, .tel {
+    color: var(--text-color) ;
+}
+
 .contakt {
     list-style-type: none;
     font-weight: 500;
@@ -73,12 +76,14 @@ body {
 }
 .main-neadline {
     background-color: rgba(33, 33, 33, 1);
+    
 }
 .headline {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.37;
-    color: var(--decor-color) ;
+    color: var(--decor-color);
+    text-transform: none;
 } 
 .btn-headline {
     background-color: rgba(33, 150, 243, 1);
