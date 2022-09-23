@@ -62,18 +62,18 @@ body {
     color: var(--brand-color);
 }
 .mail, .tel {
+    text-decoration: none; 
     color: var(--text-color) ;
 }
 
 .contakt {
     list-style-type: none;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 14px;   
      
 }
-.contakt li {
-     display: inline-block;      
-}
+   
+
 .main-neadline {
     background-color: rgba(33, 33, 33, 1);
     
@@ -83,14 +83,22 @@ body {
     font-size: 44px;
     line-height: 1.37;
     color: var(--decor-color);
-    text-transform: none;
+    text-transform: uppercase;
 } 
 .btn-headline {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:700;
     background-color: rgba(33, 150, 243, 1);
     line-height: 1.88;
     cursor: pointer;
     color: var(--decor-color) ;
+}
+
+.btn-headline:hover, .btn-headline:focus {
+    color: var(--decor-color) ;
 } 
+
 .list-hang {
     list-style-type: none;
 }
